@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DataIRISPlugin'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DataIRISPlugin.'
+  s.summary          = 'Plugins for DataIRIS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+      Provides optional component functionality for DataIRIS
                        DESC
 
-  s.homepage         = 'https://github.com/Vincent Feng/DataIRISPlugin'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/vincent4bd/DataIRISPlugin'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vincent Feng' => 'fengchengqi@bytedance.com' }
-  s.source           = { :git => 'https://github.com/Vincent Feng/DataIRISPlugin.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/vincent4bd/DataIRISPlugin.git', :tag => s.version.to_s }
+
 
   s.ios.deployment_target = '10.0'
-
+  s.preserve_paths = 'DataIRISPlugin/**/*'
   s.source_files = 'DataIRISPlugin/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'DataIRISPlugin' => ['DataIRISPlugin/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
